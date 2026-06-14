@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Venv and downloaded tools (bootstrapped by exec.bat / env/env.py)
+env/env/
+env/tools/
+
+# West-managed SDK (fetched by env/env.py)
+vendor/.west/
+vendor/mcuxsdk/
+
+# Build output
+build/
+
+# MCUXpresso Config Tools regeneration backups
+*.bak

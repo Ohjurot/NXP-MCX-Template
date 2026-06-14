@@ -1,0 +1,20 @@
+# Custom Kconfig root (picked up automatically by the SDK's kconfig.cmake when
+# present in the application directory).
+#
+# The SDK root Kconfig (vendor/mcuxsdk/Kconfig) hard-requires examples/Kconfig
+# (boards), which lives in the west project 'mcu-sdk-examples' that this repo
+# does not fetch. This device-only build does not need it, so source just
+# devices, drivers and components.
+
+mainmenu "Firmware Run Time Configuration"
+
+# device (resolves via device_root/soc_portfolio/soc_series/device variables)
+rsource "../vendor/mcuxsdk/devices/Kconfig"
+
+# Driver config
+menu "Driver Configuration"
+    rsource "../vendor/mcuxsdk/drivers/Kconfig"
+endmenu
+
+# Component config (serial manager, uart adapter, debug console, ...)
+rsource "../vendor/mcuxsdk/components/Kconfig"

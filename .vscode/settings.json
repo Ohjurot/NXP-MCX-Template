@@ -1,0 +1,15 @@
+{
+    "VsCodeTaskButtons.showCounter": false,
+    "VsCodeTaskButtons.tasks": [
+        {
+            "label": "$(tools) Build",
+            "task": "Build",
+            "tooltip": "exec.bat build"
+        },
+        {
+            "label": "$(zap) Flash",
+            "task": "Flash",
+            "tooltip": "exec.bat build + flash via LinkServer"
+        }
+    ]
+}

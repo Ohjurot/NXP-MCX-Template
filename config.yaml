@@ -1,0 +1,13 @@
+# Global project configuration — the single place for device/board specific
+# settings. Consumed by scripts/*.py; CMake receives the values as -D variables
+# forwarded by scripts/build.py.
+
+# MCUXpresso SDK device name (CMake variable 'device')
+device: MCXA266
+
+# Linker script, relative to the repo root. May point into the SDK (as below)
+# or at a custom script committed to the repo.
+linker_script_path: vendor/mcuxsdk/devices/MCX/MCXA/MCXA266/gcc/MCXA266_flash.ld
+
+# LinkServer <device>:<board> name used by 'exec.bat flash' (list: LinkServer devices)
+linkserver_device: MCXA266:FRDM-MCXA266

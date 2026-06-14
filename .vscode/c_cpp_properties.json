@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "NXPTemplate",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "compilerPath": "${workspaceFolder}/env/tools/arm-gnu-toolchain/bin/arm-none-eabi-gcc.exe",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

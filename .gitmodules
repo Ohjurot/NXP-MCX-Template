@@ -1,0 +1,4 @@
+[submodule "vendor/mcuxsdk-manifests"]
+	path = vendor/mcuxsdk-manifests
+	url = https://github.com/nxp-mcuxpresso/mcuxsdk-manifests
+	branch = release/26.03.00
